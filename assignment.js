@@ -18,4 +18,4 @@ var kiosk=[
     console.log(`${quantity} ${name} for KES ${a.price*quantity}`)
      
 }
-getTotalCost("Avocado",3)
+getTotalCost("Orange",3)

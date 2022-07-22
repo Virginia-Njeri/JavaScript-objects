@@ -10,5 +10,5 @@ class KioskCalc {
 }
 KioskCalc.prototype.price = 30;
 
-var kiosk = new KioskCalc('Mango', 4);
+var kiosk = new KioskCalc('Orange', 2);
 console.log(kiosk.getTotalCost());
