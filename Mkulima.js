@@ -1,10 +1,28 @@
+
+
+
+
+
+
+
+
+//  addFarm - params: farmId, name, farmer, phone, address
+//  removeFarm - params: farmId
+//  updateFarm - params: farmId, name, farmer, phone, address
+//  getFarm - params: farmId - returns a farm object
+//  addProduct - params: productId, name, price
+//  removeProduct - params: productId
+//  updateProduct - params: productId, name, price
+//  getProduct - params: productId - returns a product object
+//  printProducts - No param, console logs a list of product items with their prices.
+// calculateOrderCost - params: productId, quantity
 class Mkulima{
     constructor(){
     this.groceryfarm = [];
-    this.Vendor = [];
+    this.vendor = [];
     this.product = [];
-    this.addNewFarm = (farmId, farmName, farmer, phoneNumber, address) => {
-    this.groceryfarm.push({farmId,farmName,farmer,phoneNumber,address})
+    this.addFarm = (farmId, farmName, farmer, phoneNumber, address) => {//addFarm
+    this.groceryfarm.push(farmId,farmName,farmer,phoneNumber,address)
     }
     this.removeFarm = (farmId) => {
     let specific = this.groceryfarm.find(item => item.farmId ===farmId);
@@ -48,11 +66,11 @@ class Mkulima{
     }
     }
     }
-    let newfarm = new Mkulima();
-    newfarm.addNewFarm("34344","Kimani","JekiFarm","254 778834421", "Karen");
-    newfarm.addNewFarm("76545","Grace","ManiaFarm","254 789321445", "Kajiado");
-    newfarm.addNewFarm("9080","Santana","SantaFarm","254 745369203", "Komarock");
-    newfarm.addNewFarm("1000","Sakina","KimunyeFarm","254 745369203", "Komarock");
+    let newWakulima = new Mkulima();
+    newfarm.addFarm("1","Wangari","Mung'etho","0757552577", "Nakuru");
+    newfarm.addFarm("2","Wanjiru","ManiaFarm"," O713199046", "Nakuru");
+    newfarm.addFarm("3","Kamau","SubukiaFarm","072222222", "Nakuru");
+    newfarm.addFarm("4","Macharia","Kwafamu","0745369203", "Nakuru");
     console.log(newfarm.groceryfarm);
-    newfarm.removeFarm("9080");
+    newfarm.removeFarm("4");
     console.log()
