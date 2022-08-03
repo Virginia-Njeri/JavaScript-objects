@@ -66,7 +66,7 @@ class Mkulima{
     }
     }
     }
-    let newWakulima = new Mkulima();
+    let newlima = new Mkulima();
     newfarm.addFarm("1","Wangari","Mung'etho","0757552577", "Nakuru");
     newfarm.addFarm("2","Wanjiru","ManiaFarm"," O713199046", "Nakuru");
     newfarm.addFarm("3","Kamau","SubukiaFarm","072222222", "Nakuru");
